@@ -1,0 +1,148 @@
+/* 1. Cinco formas de seleccionar #especial */
+#especial {
+    background-color: lightblue;
+  }
+  
+  div#especial {
+    background-color: lightgreen;
+  }
+  
+  .contenedor > #especial {
+    background-color: lightcoral;
+  }
+  
+  section#ejercicio1 div#especial {
+    background-color: lightgoldenrodyellow;
+  }
+  
+  [id="especial"] {
+    background-color: lightpink;
+  }
+  
+  /* 2. Elementos pares en .lista-items */
+  .lista-items li:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  /* 3. Pseudo-clases y pseudo-elementos */
+  #ejercicio3 p::first-letter {
+    font-size: 150%;
+    color: red;
+  }
+  
+  #ejercicio3 button:hover {
+    background-color: yellow;
+  }
+  
+  #ejercicio3 input:focus {
+    border: 2px solid blue;
+  }
+  
+  #ejercicio3::selection {
+    background-color: orange;
+  }
+  
+  /* 4. Más pseudo-selectores */
+  #ejercicio4 button:hover {
+    background-color: violet;
+  }
+  
+  #ejercicio4 input:focus {
+    border: 2px dashed green;
+  }
+  
+  /* 5. Clase .destacado */
+  .destacado {
+    color: darkred;
+  }
+  
+  /* 6. Primer párrafo de cada sección */
+  section p:first-of-type {
+    font-weight: bold;
+  }
+  
+  /* 7. div hijo directo de otro div */
+  div > div {
+    border: 1px solid black;
+  }
+  
+  /* 8. Último item en lista ordenada */
+  .lista-ordenada li:last-child {
+    font-size: 20px;
+  }
+  
+  /* 9. Enlaces sin target=_blank */
+  a:not([target="_blank"]) {
+    text-decoration: underline;
+  }
+  
+  /* 10. P dentro de article */
+  article p {
+    line-height: 1.8;
+  }
+  
+  /* 11. h2 que contenga span */
+  h2 span {
+    color: darkblue;
+  }
+  
+  /* 12. img con alt definido */
+  img[alt] {
+    border: 2px solid gray;
+  }
+  
+  /* 13. Tercer elemento de lista desordenada */
+  .lista-desordenada li:nth-child(3) {
+    font-style: italic;
+  }
+  
+  /* 14. Filas impares en tabla */
+  table tr:nth-child(odd) {
+    background-color: #eee;
+  }
+  
+  /* 15. div con al menos dos clases */
+  div[class~="clase2"] {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* 16. button al hacer hover */
+  button:hover {
+    background-color: lightgray;
+  }
+  
+  /* 17. input type text en form */
+  form input[type="text"] {
+    border: 2px solid red;
+  }
+  
+  /* 18. p inmediatamente después de h3 */
+  h3 + p {
+    color: purple;
+  }
+  
+  /* 19. Enlaces visitados */
+  a:visited {
+    opacity: 0.6;
+  }
+  
+  /* 20. strong dentro de p */
+  p strong {
+    color: orange;
+  }
+  
+  /* 21. input deshabilitado */
+  input:disabled {
+    background-color: lightgray;
+  }
+  
+  /* 22. li dentro de nav */
+  nav li {
+    margin-bottom: 10px;
+  }
+  
+  /* 23. clase que contenga "importante" */
+  [class*="importante"] {
+    font-weight: bold;
+  }
+  
