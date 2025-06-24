@@ -1,0 +1,123 @@
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  .flex-container {
+    display: flex;
+    background-color: #eee;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .flex-container > div {
+    background-color: #cce;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #99c;
+  }
+  
+  .basic {
+    justify-content: flex-start;
+  }
+  
+  .row {
+    flex-direction: row;
+  }
+  
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .column {
+    flex-direction: column;
+  }
+  
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+  
+  .wrap {
+    flex-wrap: wrap;
+  }
+  
+  .wrap > div {
+    flex: 0 0 120px;
+  }
+  
+  .align {
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 150px;
+    align-content: space-between;
+  }
+  
+  .orden {
+    height: 150px;
+    align-items: center;
+  }
+  
+  .order-1 {
+    order: 1;
+  }
+  
+  .order-2 {
+    order: 2;
+  }
+  
+  .order-3 {
+    order: 3;
+  }
+  
+  .grow {
+    flex-grow: 2;
+  }
+  
+  .shrink {
+    flex-shrink: 0;
+    width: 150px;
+  }
+  
+  .self-align {
+    align-self: flex-start;
+  }
+  
+  .layout {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+  }
+  
+  .layout header,
+  .layout footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .layout main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .layout aside {
+    flex: 1;
+    background-color: #bbb;
+    padding: 10px;
+    min-width: 150px;
+  }
+  
+  .layout .contenido {
+    flex: 3;
+    background-color: #ddd;
+    padding: 10px;
+    min-width: 200px;
+  }
+  
