@@ -1,0 +1,87 @@
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  
+  .grid-container > * {
+    background-color: #cce;
+    border: 1px solid #99c;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .basico {
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 50px 50px;
+  }
+  
+  .areas {
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #aaf;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #afa;
+  }
+  
+  .content {
+    grid-area: content;
+    background-color: #faa;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #ccc;
+  }
+  
+  .alineacion {
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 80px);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .align-me {
+    justify-self: end;
+    align-self: start;
+    background-color: #f88;
+  }
+  
+  .avanzado {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 60px);
+  }
+  
+  .span-col {
+    grid-column: span 2;
+    background-color: #acf;
+  }
+  
+  .span-row {
+    grid-row: span 2;
+    background-color: #faa;
+  }
+  
